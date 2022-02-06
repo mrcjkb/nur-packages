@@ -18,7 +18,7 @@ let
 
   jdtls = stdenv.mkDerivation rec {
 
-    name = "jdtls-${version}";
+    name = "eclipse-jdt-language-server-${version}";
     inherit src;
 
     sourceRoot = ".";
@@ -30,7 +30,11 @@ let
 
     meta = with lib; {
       homepage = "https://github.com/eclipse/eclipse.jdt.ls";
-      description = "Eclipse Java language server";
+      description = "Eclipse JDT Language Server";
+      longDescription = ''
+        The Eclipse JDT Language Server is a Java language specific implementation of the Language Server Protocol
+        and can be used with any editor that supports the protocol, to offer good support for the Java Language.
+      '';
       platforms = platforms.linux;
       maintainers = with maintainers; [ marc-jakobi ];
     };
