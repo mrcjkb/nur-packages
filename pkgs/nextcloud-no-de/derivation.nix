@@ -18,5 +18,5 @@ in writeShellScriptBin "${name}" ''
   while ! $(${libsecret}/bin/secret-tool lookup Title "Nextcloud" &> /dev/null); do
     sleep 1s
   done
-  ${nextcloud-client}/bin/nextcloud &
+  ${nextcloud-client}/bin/nextcloud "$@" &
   ''
