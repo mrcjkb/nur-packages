@@ -16,7 +16,7 @@
 
   eclipse-jdt-language-server = pkgs.callPackage ./pkgs/eclipse-jdt-language-server { };
   ranger-fm = pkgs.callPackage ./pkgs/ranger-fm { };
-  yubikee-smartvpn = pkgs.callpackage ./pkgs/yubikee-smartvpn { };
-  nextcloud-no-de = pkgs.callpackage ./pkgs/nextcloud-no-de { };
+  yubikee-smartvpn = pkgs.callPackage ./pkgs/yubikee-smartvpn { };
+  nextcloud-no-de = pkgs.callPackage ./pkgs/nextcloud-no-de { };
 
 }
